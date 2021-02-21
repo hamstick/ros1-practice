@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 import rospy
 from std_msgs.msg import String
@@ -15,11 +15,11 @@ def publisher():
     
     count = 0
     while not rospy.is_shutdown():
-        msg_text = "hello world"
+        msg_text = rospy.get_param('~message')
         
         # create publish message
         msg = String()
-        msg.data = rospy.get_param('~message')
+        msg.data = msg_text
 
         # send message
         pub.publish(msg)
