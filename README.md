@@ -5,10 +5,10 @@ ROS1 Melodic or Noetic+Python3 package for sessions
 Koki Nagahama (@hamstick)
 
 ## Usage
-ディレクトリ `~/catkin_ws/src` ができている状態で
+catkinワークスペースができている状態で，そこ以外のお好きなディレクトリで
 ```
 $ git clone https://github.com/enjoydolylab/ros1-practice.git
 $ cp -r  hello_world ~/catkin_ws/src/
-$ catkin_make
+$ catkin build
 ```
 を実行してください
