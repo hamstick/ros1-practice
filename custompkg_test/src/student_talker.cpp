@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
   ros::Rate loop_rate(1); // how many times in 1sec. [Hz]
   while(ros::ok()){
     custom_msgs::Student msg;
-    msg.id = "AL17083";
+    msg.id = "XXXXXXX";
     msg.name = "Koki Nagahama";
     msg.credits = 130;
     msg.gpa = 3.20;
